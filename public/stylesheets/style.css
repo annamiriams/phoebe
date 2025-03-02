@@ -14,35 +14,36 @@ h1 {
     margin: 10px;
 }
 
-/* img styling */
-
-#snowImg {
-    display: block;
-    width: calc(100% - 2em);
-    /* Ensures the images take up full width minus padding */
-    margin: 0 auto;
-    /* Centers the images */
-    border-radius: 12px;
-    padding: .4em;
-}
+/* home.ejs image styling */
 
 #snowImages {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
-    /* padding: 0 1em; */
-    /* Adds equal padding on both sides */
-        flex-wrap: wrap;
 }
 
 #snowImages img {
-    /* width: 100%; */
-    /* Makes sure each image takes full width of the container */
+    display: block;
     height: 80vh;
     border-radius: 10px;
-    margin-bottom: 1em;
-    /* Space between images */
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: .2em;
+}
+
+/* gallery.ejs image styling */
+
+#galleryImages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#galleryImages img {
+    height: 80vh;
     border-radius: 10px;
+    margin: .2em;
+    padding: .2em;
+    border-radius: 12px;
 }
 
 /* nav styling (default layout)*/
@@ -169,38 +170,29 @@ nav a {
         padding: 10px 40px 10px;
     }
 
-    #snowImg {
-        display: block;
-        width: calc(100% - 2em);
-        /* Ensures the images take up full width minus padding */
-        margin: 0 auto;
-        /* Centers the images */
-        border-radius: 10px;
-    }
-
-    #snowImages {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 0 1em;
-        /* Adds equal padding on both sides */
-    }
-
-    #snowImages img {
-        width: 100%;
-        /* Makes sure each image takes full width of the container */
-        height: auto;
-        margin-bottom: 1em;
-        /* Space between images */
-        border-radius: 10px;
-    }
-
     nav {
         /* padding is still weird on the right compared to the left */
         padding: 10px 0 10px 1em;
         /* Adjust the padding of the nav bar to match the images */
         justify-content: space-between;
         /* width: 100%; */
+    }
+
+    #snowImages {
+        flex-wrap: wrap;
+        padding: 0 1em;
+    }
+
+    #snowImages img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    #galleryImages img {
+        height: 40vh;
+        margin: 1em;
     }
 }
 
