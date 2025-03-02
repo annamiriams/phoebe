@@ -32,6 +32,7 @@ h1 {
     /* flex-wrap: wrap; */
     /* padding: 0 1em; */
     /* Adds equal padding on both sides */
+        flex-wrap: wrap;
 }
 
 #snowImages img {
