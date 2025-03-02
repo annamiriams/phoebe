@@ -1,15 +1,21 @@
 <nav>
-    <a href="/home">Home</a>
-    <div>
-        <a href="/info" class="dropdown">Info</a>
-        <div class="dropdownContent">
-            <a href="/info/about">About</a>
-            <a href="/info/routine">Daily Routine</a>
-            <a href="/info/medications">Medications</a>
-            <a href="/info/places">Places</a>
-            <a href="/info/training">Training</a>
-            <a href="/info/medical">Medical History</a>
-        </div>
+    <div class="hamburger" id="hamburger-icon">
+        &#9776;
     </div>
-    <a href="/gallery">Gallery</a>
+
+    <div class="nav-links" id="nav-links">
+        <a href="/home">Home</a>
+        <div class="dropdown">
+            <a href="/about" class="dropdown-link">About</a>
+            <div class="dropdown-content" id="dropdown-content">
+                <a href="/about/personality">Personality</a>
+                <a href="/about/routine">Daily Routine</a>
+                <a href="/about/medications">Medications</a>
+                <a href="/about/places">Places</a>
+                <a href="/about/training">Training</a>
+                <a href="/about/medical">Medical History</a>
+            </div>
+        </div>
+        <a href="/gallery">Gallery</a>
+    </div>
 </nav>
