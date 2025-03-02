@@ -1,12 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
 
+html {
+    margin: 0;
+}
+
+body {
+    font-family: 'Italiana', sans-serif;
+    letter-spacing: .2em;
+}
+
+h1 {
+    font-size: 6em;
+    margin: 10px;
+}
+
+/* img styling */
+
+#snowImg {
+    display: block;
+    width: calc(100% - 2em);
+    /* Ensures the images take up full width minus padding */
+    margin: 0 auto;
+    /* Centers the images */
+    border-radius: 12px;
+    padding: .4em;
+}
+
+#snowImages {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* padding: 0 1em; */
+    /* Adds equal padding on both sides */
+}
+
+#snowImages img {
+    /* width: 100%; */
+    /* Makes sure each image takes full width of the container */
+    height: 80vh;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    /* Space between images */
+    border-radius: 10px;
+}
 
 /* nav styling (default layout)*/
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 6px;
     font-size: 1em;
 }
 
@@ -122,6 +166,40 @@ nav a {
     .dropdown-content a {
         text-align: left;
         padding: 10px 40px 10px;
+    }
+
+    #snowImg {
+        display: block;
+        width: calc(100% - 2em);
+        /* Ensures the images take up full width minus padding */
+        margin: 0 auto;
+        /* Centers the images */
+        border-radius: 10px;
+    }
+
+    #snowImages {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 1em;
+        /* Adds equal padding on both sides */
+    }
+
+    #snowImages img {
+        width: 100%;
+        /* Makes sure each image takes full width of the container */
+        height: auto;
+        margin-bottom: 1em;
+        /* Space between images */
+        border-radius: 10px;
+    }
+
+    nav {
+        /* padding is still weird on the right compared to the left */
+        padding: 10px 0 10px 1em;
+        /* Adjust the padding of the nav bar to match the images */
+        justify-content: space-between;
+        /* width: 100%; */
     }
 }
 
