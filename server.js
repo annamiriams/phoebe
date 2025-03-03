@@ -44,11 +44,6 @@ app.get('/about/medications', (req, res) => {
     res.render('pages/medications.ejs');
 });
 
-// places.ejs
-app.get('/about/places', (req, res) => {
-    res.render('pages/places.ejs');
-});
-
 // training.ejs
 app.get('/about/training', (req, res) => {
     res.render('pages/training.ejs');
