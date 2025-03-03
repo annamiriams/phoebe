@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 html {
     margin: 0;
@@ -7,6 +7,7 @@ html {
 body {
     font-family: 'Italiana', sans-serif;
     letter-spacing: .2em;
+    margin: 0;
 }
 
 h1 {
@@ -14,8 +15,27 @@ h1 {
     margin: 10px;
 }
 
+p,
+h2,
 h5 {
-    margin: 20px;
+    margin: 15px;
+}
+
+p {
+    font-family: 'Lora';
+    font-style: italic;
+}
+
+ul {
+    font-family: 'Lora';
+    font-size: .8em;
+    list-style-type: circle;
+}
+
+a:visited,
+a:link {
+    text-decoration: none;
+    color: black;
 }
 
 /* home.ejs image styling */
@@ -145,7 +165,9 @@ th {
 
 td {
     background-color: lightgray;
-    font-weight: 600;
+    font-family: 'Lora';
+    font-size: 12px;
+    letter-spacing: 1px;
     padding: 10px;
 }
 

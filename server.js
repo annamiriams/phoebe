@@ -29,6 +29,11 @@ app.get('/about/personality', (req, res) => {
     res.render('pages/personality.ejs');
 });
 
+// favorites.ejs
+app.get('/about/favorites', (req, res) => {
+    res.render('pages/favorites.ejs');
+});
+
 // routine.ejs
 app.get('/about/routine', (req, res) => {
     res.render('pages/routine.ejs');
