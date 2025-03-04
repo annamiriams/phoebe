@@ -166,7 +166,8 @@ nav a {
 
 /* table settings */
 
-.medTable {
+.medTable,
+#cuesTable {
     margin: 10px;
 }
 
@@ -294,7 +295,8 @@ td {
         max-width: 100%;
     }
 
-    .medTable {
+    .medTable,
+    #cuesTable {
         max-width: 80%;
     }
 }
