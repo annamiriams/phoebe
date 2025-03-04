@@ -53,7 +53,27 @@ a:link {
     padding: .2em;
 }
 
-/* gallery.ejs image styling */
+/* personality.ejs image styling */
+#personalityImages img {
+    width: 80%;
+}
+
+#personalityImages {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#galleryImages img,
+#personalityImages img {
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: .2em;
+}
+
+/* gallery.ejs image styling & above */
 
 #galleryImages {
     display: flex;
@@ -63,19 +83,16 @@ a:link {
 
 #galleryImages img {
     height: 80vh;
-    border-radius: 10px;
-    margin: .2em;
-    padding: .2em;
 }
 
 /* medical.ejs styling */
 
-#medical p {
+.pContainer p {
     font-family: "Lora";
     font-style: normal;
 }
 
-#medContainer {
+.container {
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -269,7 +286,7 @@ td {
         margin: 1em;
     }
 
-    #medContainer {
+    #container {
         flex-direction: column;
         align-items: center;
     }
@@ -291,7 +308,7 @@ td {
         height: auto;
     }
 
-    #medical p {
+    #pContainer p {
         max-width: 100%;
     }
 
