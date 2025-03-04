@@ -197,6 +197,10 @@ td {
 
 /* mobile styling */
 @media (max-width: 768px) {
+    html {
+        max-width: 100%;
+    }
+
     .hamburger {
         display: block;
         color: white;
@@ -266,6 +270,28 @@ td {
     #galleryImages img {
         height: 40vh;
         margin: 1em;
+    }
+
+    #medContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #medImages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #brooklynYard,
+    #bluePearl {
+        max-width: 40%;
+        height: auto;
+    }
+
+    #medical p {
+        max-width: 100%;
     }
 }
 
