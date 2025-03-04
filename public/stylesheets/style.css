@@ -70,10 +70,6 @@ a:link {
 
 /* medical.ejs styling */
 
-#medical {
-    /* background-color: lightgrey; */
-}
-
 #medical p {
     font-family: "Lora";
     font-style: normal;
@@ -170,7 +166,7 @@ nav a {
 
 /* table settings */
 
-#table {
+.medTable {
     margin: 10px;
 }
 
@@ -292,6 +288,10 @@ td {
 
     #medical p {
         max-width: 100%;
+    }
+
+    .medTable {
+        max-width: 80%;
     }
 }
 
