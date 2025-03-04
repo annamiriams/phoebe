@@ -85,7 +85,7 @@ a:link {
 #medImages img {
     max-width: 60%;
     height: auto;
-    padding: 2em;
+    padding: 0 2em 2em;
 }
 
 /* nav styling (default layout)*/
@@ -278,6 +278,10 @@ td {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #medImages img {
+        padding: 2em 2em 0;
     }
 
     #brooklynYard,
