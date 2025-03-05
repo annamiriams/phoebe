@@ -1,15 +1,25 @@
-// Toggle the visibility of the dropdown when clicking on "About"
-const aboutLink = document.getElementById('about-link');
-const dropdownContent = document.getElementById('dropdown-content');
-
-aboutLink.addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent the default link behavior
-    dropdownContent.classList.toggle('show'); // Toggle the visibility of the dropdown
+// Hamburger menu toggle for mobile
+document.getElementById('hamburger-icon').addEventListener('click', function () {
+    document.getElementById('nav-links').classList.toggle('active');
 });
 
-// Optional: Close the dropdown if clicking outside of the dropdown
-document.addEventListener('click', (e) => {
-    if (!aboutLink.contains(e.target) && !dropdownContent.contains(e.target)) {
-        dropdownContent.classList.remove('show');
+// For mobile dropdown toggle
+const dropdownLink = document.querySelector('.dropdown-link');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+// Handle clicking on the "About" link to toggle the dropdown in mobile
+dropdownLink.addEventListener('click', function (event) {
+    // Prevent the default link behavior (no page reload)
+    event.preventDefault();
+
+    // Toggle dropdown content visibility
+    dropdownContent.classList.toggle('active');
+});
+
+// Optional: Close dropdown if clicking outside of the dropdown menu
+document.addEventListener('click', function (e) {
+    // Close dropdown if the click happens outside of the "About" link or dropdown
+    if (!dropdownLink.contains(e.target) && !dropdownContent.contains(e.target)) {
+        dropdownContent.classList.remove('active');
     }
 });
