@@ -25,8 +25,8 @@ app.get('/home', (req, res) => {
 });
 
 // about.ejs
-app.get('/about', (req, res) => {
-    res.render('pages/about.ejs');
+app.get('/about/basics', (req, res) => {
+    res.render('pages/basics.ejs');
 });
 
 // personality.ejs
