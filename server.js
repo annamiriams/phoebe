@@ -24,6 +24,11 @@ app.get('/home', (req, res) => {
     res.render('home.ejs');
 });
 
+// about.ejs
+app.get('/about', (req, res) => {
+    res.render('pages/about.ejs');
+});
+
 // personality.ejs
 app.get('/about/personality', (req, res) => {
     res.render('pages/personality.ejs');

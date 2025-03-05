@@ -1,15 +1,15 @@
-document.getElementById('hamburger-icon').addEventListener('click', function () {
-    document.getElementById('nav-links').classList.toggle('active');
+// Toggle the visibility of the dropdown when clicking on "About"
+const aboutLink = document.getElementById('about-link');
+const dropdownContent = document.getElementById('dropdown-content');
+
+aboutLink.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the default link behavior
+    dropdownContent.classList.toggle('show'); // Toggle the visibility of the dropdown
 });
 
-// For mobile dropdown toggle
-const dropdownLink = document.querySelector('.dropdown-link');
-const dropdownContent = document.querySelector('.dropdown-content'); // Use querySelector to select the correct element
-
-dropdownLink.addEventListener('click', function (event) {
-    // Prevent link navigation on click
-    event.preventDefault();
-
-    // Toggle dropdown content visibility
-    dropdownContent.classList.toggle('active');
+// Optional: Close the dropdown if clicking outside of the dropdown
+document.addEventListener('click', (e) => {
+    if (!aboutLink.contains(e.target) && !dropdownContent.contains(e.target)) {
+        dropdownContent.classList.remove('show');
+    }
 });
