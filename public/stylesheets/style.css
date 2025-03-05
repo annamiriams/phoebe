@@ -8,6 +8,7 @@ body {
     font-family: 'Italiana', sans-serif;
     letter-spacing: .2em;
     margin: 0;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -183,16 +184,13 @@ nav a {
 
 /* table settings */
 
-.medTable,
-#cuesTable {
-    margin: 10px;
-}
-
 table {
     border: 1px solid black;
     margin: .2em;
     padding: 10px;
     border-radius: 4px;
+    width: 80%;
+    max-width: 80%;
 }
 
 th {
@@ -207,6 +205,11 @@ td {
     font-size: 12px;
     letter-spacing: 1px;
     padding: 10px;
+}
+
+th,
+td {
+    width: 30%;
 }
 
 /* mobile styling */
@@ -322,7 +325,24 @@ td {
 
     .medTable,
     #cuesTable {
-        max-width: 80%;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        margin: .2em;
+    }
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    th {
+        word-wrap: break-word;
+    }
+
+    .medTable {
+        table-layout: fixed;
     }
 }
 
