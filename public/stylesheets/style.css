@@ -214,7 +214,7 @@ td {
     html {
         max-width: 100%;
     }
-
+    
     .hamburger {
         display: block;
         color: white;
@@ -286,7 +286,7 @@ td {
         margin: 1em;
     }
 
-    #container {
+    .container {
         flex-direction: column;
         align-items: center;
     }
@@ -306,6 +306,10 @@ td {
     #bluePearl {
         max-width: 40%;
         height: auto;
+    }
+
+    #personalityImages {
+        max-width: 100%;
     }
 
     #pContainer p {
